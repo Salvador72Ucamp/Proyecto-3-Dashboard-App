@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +7,15 @@
     <title>Proyecto 3 - Dashboard App</title>
 </head>
 <body>    
-    
-    <script src="./index.js"></script>
+    <main class="wrapper">
+        <h1>Wellcome to Population Dashboard, type your code countries</h1>
+        <input id="inputName" type="text" />
+        <button id="btn1">Obtener la informacion</button>
+        <div>
+            <canvas id="myChart"></canvas>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./populationCountry.js" type="module"></script>
 </body>
 </html>
