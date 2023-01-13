@@ -1,34 +1,10 @@
 export function crearChart(data){
     const resultadoLabels = data.map((ciudad)=>ciudad.name.common);
     const resultadoValues = data.map((ciudad)=>ciudad.population);
-    console.log(resultadoLabels,resultadoValues)
+    // console.log(resultadoLabels,resultadoValues)
 
     const ctx = document.getElementById('myChart')
     
-//     new Chart(ctx, {
-//     type: 'bar',
-//     data: {
-//         labels: resultadoLabels,
-//         datasets: [
-//             {
-//                 label: 'Population by Country',
-//                 data: resultadoValues,
-//                 borderWidth: 1,
-//             },
-//         ],
-//     },
-//     options: {
-//         scales: {
-//             y: {
-//                 beginAtZero: true,
-//             },
-//         },
-//     },
-// })
-
-
-
-
     new Chart(ctx,{
         type: 'polarArea',
      data : {
