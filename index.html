@@ -1,12 +1,27 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto 3 - Dashboard App</title>
+    <link rel="stylesheet" href="index.css" />
 </head>
-<body>    
-    
-    <script src="./index.js"></script>
+<body>
+    <header class="container header">Proyecto 3 - Dashboard App
+        <img src="./images/logo-ucamp-dark.png" class="logo" />
+    </header>
+    <div class="mainContainer">    
+        <div class="container sideBar">
+            <button id="btn1" class="buttons">Poblacion en centro America</button>
+            <button id="btn2" class="buttons">Poblacion en Sur America</button>
+        </div>
+        <div class="container main">
+            <h1>Tablero de Poblacion America por Region</h1>
+            <div id="chartContainer"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./populationCountry.js" type="module"></script>
 </body>
 </html>
